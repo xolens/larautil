@@ -1,0 +1,16 @@
+{
+    "name": "xolens/larautil",
+    "description": "Usefull tools for PHP/Laravel application.",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^4"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Xolens",
+            "email": "xolens.official@gmail.com"
+        }
+    ],
+    "require": {}
+}
