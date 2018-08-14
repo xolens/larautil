@@ -6,11 +6,26 @@
         "phpunit/phpunit": "^4"
     },
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Xolens",
-            "email": "xolens.official@gmail.com"
+    "authors": [{
+        "name": "Xolens",
+        "email": "xolens.official@gmail.com"
+    }],
+    "require": {},
+    "autoload": {
+        "classmap": [
+            "src/"
+        ],
+        "psr-4": {
+            "Xolens\\Larautil\\": "src/Larautil",
+            "Xolens\\Larautil\\App\\Model\\": "src/Larautil/App/Model/",
+            "Xolens\\Larautil\\App\\Util\\": "src/Larautil/App/Util/"
         }
-    ],
-    "require": {}
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Xolens\\Larautil\\LarautilServiceProvider"
+            ]
+        }
+    }
 }
