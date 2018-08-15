@@ -1,6 +1,6 @@
 <?php
 
-namespace Larautil;
+namespace Xolens\Larautil;
 
 use Illuminate\Support\ServiceProvider;
 
