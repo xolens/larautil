@@ -6,7 +6,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Facades\DB;
 use LarautilCreateDatabaseLogTriggerFunction;
 
-abstract class LarautilMigration extends AbstractLarautilMigration 
+abstract class LarautilMigration extends AbstractLarautilMigration
 {
     public static function tablePrefix(){
         return config('larautil.database_table_prefix');

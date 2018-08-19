@@ -32,6 +32,7 @@ class LarautilCreateDatabaseLogTable extends LarautilMigration
             $table->enum('log_type',[self::TYPE_INSERT,self::TYPE_UPDATE,self::TYPE_DELETE]);
             $table->string('last_value')->nullable();
             $table->timestamp('log_at');
+            $table->softDeletes();
         });
     }
 
