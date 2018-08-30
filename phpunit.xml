@@ -13,7 +13,7 @@
     </php>
     <testsuites>
         <testsuite name="test-package">
-        <directory>src/Xolens/Larautil/Test</directory>
+        <directory>src/Xolens/PgLarautil/Test</directory>
         </testsuite>
   </testsuites>
 </phpunit>

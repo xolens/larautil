@@ -1,12 +1,12 @@
 <?php
 
-namespace Xolens\Larautil\App\Util;
+namespace Xolens\PgLarautil\App\Util;
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Facades\DB;
-use LarautilCreateDatabaseLogTriggerFunction;
+use PgLarautilCreateDatabaseLogTriggerFunction;
 
-abstract class AbstractLarautilMigration extends Migration 
+abstract class AbstractPgLarautilMigration extends Migration 
 {
     public static abstract function tableName();
 
@@ -33,7 +33,7 @@ abstract class AbstractLarautilMigration extends Migration
     public static function registerForLog(){
         DB::statement("
             CREATE TRIGGER ".static::trigger()." AFTER INSERT OR UPDATE OR DELETE ON ".static::table()."
-            FOR EACH ROW EXECUTE PROCEDURE ".LarautilCreateDatabaseLogTriggerFunction::table()."();
+            FOR EACH ROW EXECUTE PROCEDURE ".PgLarautilCreateDatabaseLogTriggerFunction::table()."();
         ");
         return;
     }

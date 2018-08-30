@@ -1,7 +1,7 @@
 {
 	"_type": "Project",
 	"_id": "AAAAAAFF+h6SjaM2Hec=",
-	"name": "Larautil",
+	"name": "PgLarautil",
 	"ownedElements": [
 		{
 			"_type": "UMLModel",
@@ -75,7 +75,9 @@
 							"_parent": {
 								"$ref": "AAAAAAFlN9kCPUsedPM="
 							},
-							"name": "Date deleted_at"
+							"name": "Date deleted_at",
+							"visibility": "private",
+							"type": ""
 						}
 					]
 				},
@@ -346,7 +348,7 @@
 											"top": 142,
 											"width": 919,
 											"height": 13,
-											"text": "Larautil"
+											"text": "PgLarautil"
 										},
 										{
 											"_type": "LabelView",
@@ -473,7 +475,7 @@
 											"top": -344,
 											"width": 80.9072265625,
 											"height": 13,
-											"text": "(from Larautil)"
+											"text": "(from PgLarautil)"
 										},
 										{
 											"_type": "LabelView",
@@ -589,7 +591,7 @@
 											"top": -448,
 											"width": 80.9072265625,
 											"height": 13,
-											"text": "(from Larautil)"
+											"text": "(from PgLarautil)"
 										},
 										{
 											"_type": "LabelView",
@@ -1086,7 +1088,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFlN92DZUt9xcs="
 									},
-									"name": "Larautil",
+									"name": "PgLarautil",
 									"ownedElements": [
 										{
 											"_type": "UMLPackage",
@@ -1198,7 +1200,7 @@
 											"top": 79,
 											"width": 211.0341796875,
 											"height": 13,
-											"text": "LarautilCreateDatabaseLogTable"
+											"text": "PgLarautilCreateDatabaseLogTable"
 										},
 										{
 											"_type": "LabelView",
@@ -1480,7 +1482,7 @@
 											"top": 327,
 											"width": 267.99169921875,
 											"height": 13,
-											"text": "LarautilCreateDatabaseLogTriggerFunction"
+											"text": "PgLarautilCreateDatabaseLogTriggerFunction"
 										},
 										{
 											"_type": "LabelView",
@@ -1709,7 +1711,7 @@
 											"top": 110,
 											"width": 231,
 											"height": 13,
-											"text": "Xolens.Larautil.App.Util"
+											"text": "Xolens.PgLarautil.App.Util"
 										},
 										{
 											"_type": "LabelView",
@@ -1816,7 +1818,7 @@
 											"top": 143,
 											"width": 105.447265625,
 											"height": 13,
-											"text": "LarautilMigration"
+											"text": "PgLarautilMigration"
 										},
 										{
 											"_type": "LabelView",
@@ -1830,7 +1832,7 @@
 											"top": -624,
 											"width": 173.39892578125,
 											"height": 13,
-											"text": "(from Xolens.Larautil.App.Util)"
+											"text": "(from Xolens.PgLarautil.App.Util)"
 										},
 										{
 											"_type": "LabelView",
@@ -2148,7 +2150,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Xolens.Larautil  Class Diagram",
+					"name": "Xolens.PgLarautil  Class Diagram",
 					"ownedViews": [
 						{
 							"_type": "UMLClassView",
@@ -2191,7 +2193,7 @@
 											"top": 167,
 											"width": 145.9580078125,
 											"height": 13,
-											"text": "LarautilServiceProvider"
+											"text": "PgLarautilServiceProvider"
 										},
 										{
 											"_type": "LabelView",
@@ -2360,7 +2362,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "LarautilServiceProvider",
+					"name": "PgLarautilServiceProvider",
 					"operations": [
 						{
 							"_type": "UMLOperation",
@@ -2386,7 +2388,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "LarautilCreateDatabaseLogTable",
+					"name": "PgLarautilCreateDatabaseLogTable",
 					"ownedElements": [
 						{
 							"_type": "UMLGeneralization",
@@ -2467,7 +2469,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "LarautilCreateDatabaseLogTriggerFunction",
+					"name": "PgLarautilCreateDatabaseLogTriggerFunction",
 					"ownedElements": [
 						{
 							"_type": "UMLGeneralization",
@@ -2516,7 +2518,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Xolens.Larautil.App.Util",
+					"name": "Xolens.PgLarautil.App.Util",
 					"ownedElements": [
 						{
 							"_type": "UMLClass",
@@ -2524,7 +2526,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFlN+vgJk3mND0="
 							},
-							"name": "LarautilMigration"
+							"name": "PgLarautilMigration"
 						}
 					]
 				},
@@ -2534,7 +2536,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Xolens.Larautil.App.Util Class Diagram",
+					"name": "Xolens.PgLarautil.App.Util Class Diagram",
 					"ownedViews": [
 						{
 							"_type": "UMLClassView",
@@ -2579,7 +2581,7 @@
 											"top": 135,
 											"width": 158.18359375,
 											"height": 13,
-											"text": "AbstractLarautilMigration"
+											"text": "AbstractPgLarautilMigration"
 										},
 										{
 											"_type": "LabelView",
@@ -2893,7 +2895,7 @@
 											"top": 351,
 											"width": 105.447265625,
 											"height": 13,
-											"text": "LarautilMigration"
+											"text": "PgLarautilMigration"
 										},
 										{
 											"_type": "LabelView",
@@ -3544,7 +3546,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Xolens.Larautil.App.Model Class Diagram",
+					"name": "Xolens.PgLarautil.App.Model Class Diagram",
 					"defaultDiagram": true,
 					"ownedViews": [
 						{
@@ -3741,7 +3743,7 @@
 											"top": 313,
 											"width": 115.2607421875,
 											"height": 13,
-											"text": "+Date deleted_at",
+											"text": "-Date deleted_at",
 											"horizontalAlignment": 0
 										}
 									],
@@ -3825,7 +3827,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "AbstractLarautilMigration",
+					"name": "AbstractPgLarautilMigration",
 					"ownedElements": [
 						{
 							"_type": "UMLGeneralization",
@@ -3916,7 +3918,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "LarautilMigration",
+					"name": "PgLarautilMigration",
 					"ownedElements": [
 						{
 							"_type": "UMLGeneralization",
@@ -3976,7 +3978,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Xolens.Larautil.App.Repository Class Diagram",
+					"name": "Xolens.PgLarautil.App.Repository Class Diagram",
 					"ownedViews": [
 						{
 							"_type": "UMLPackageView",
@@ -4021,7 +4023,7 @@
 											"top": 54,
 											"width": 423,
 											"height": 13,
-											"text": "Xolens.Larautil.App.Repository.Contract"
+											"text": "Xolens.PgLarautil.App.Repository.Contract"
 										},
 										{
 											"_type": "LabelView",
@@ -4329,9 +4331,9 @@
 											"font": "Arial;13;1",
 											"left": 701,
 											"top": 246,
-											"width": 152.42626953125,
+											"width": 160.0625,
 											"height": 13,
-											"text": "BaseRepositoryContract"
+											"text": "WritableRepositoryContract"
 										},
 										{
 											"_type": "LabelView",
@@ -4345,7 +4347,7 @@
 											"top": -406,
 											"width": 268.53759765625,
 											"height": 13,
-											"text": "(from Xolens.Larautil.App.Repository.Contract)"
+											"text": "(from Xolens.PgLarautil.App.Repository.Contract)"
 										},
 										{
 											"_type": "LabelView",
@@ -4364,7 +4366,7 @@
 									"font": "Arial;13;0",
 									"left": 696,
 									"top": 239,
-									"width": 162.42626953125,
+									"width": 182.39599609375,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAFlOAWpRVE6UiU="
@@ -4417,7 +4419,7 @@
 											"font": "Arial;13;0",
 											"left": 701,
 											"top": 269,
-											"width": 152.42626953125,
+											"width": 160.0625,
 											"height": 13,
 											"text": "+create()",
 											"horizontalAlignment": 0
@@ -4434,7 +4436,7 @@
 											"font": "Arial;13;0",
 											"left": 701,
 											"top": 284,
-											"width": 152.42626953125,
+											"width": 160.0625,
 											"height": 13,
 											"text": "+update()",
 											"horizontalAlignment": 0
@@ -4451,7 +4453,7 @@
 											"font": "Arial;13;0",
 											"left": 701,
 											"top": 299,
-											"width": 152.42626953125,
+											"width": 160.0625,
 											"height": 13,
 											"text": "+delete()",
 											"horizontalAlignment": 0
@@ -4460,7 +4462,7 @@
 									"font": "Arial;13;0",
 									"left": 696,
 									"top": 264,
-									"width": 162.42626953125,
+									"width": 170.0625,
 									"height": 53
 								},
 								{
@@ -4503,7 +4505,7 @@
 							"containerChangeable": true,
 							"left": 696,
 							"top": 216,
-							"width": 162.42626953125,
+							"width": 170.0625,
 							"height": 102,
 							"stereotypeDisplay": "icon",
 							"nameCompartment": {
@@ -4605,7 +4607,7 @@
 								"$ref": "AAAAAAFlUwjVDku564o="
 							},
 							"lineStyle": 1,
-							"points": "514:239;765.213134765625:231.12830644772376",
+							"points": "514:238;769.03125:230.87132352941177",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAFlOAXt5VFfDs4="
@@ -4658,9 +4660,9 @@
 											"font": "Arial;13;1",
 											"left": 357,
 											"top": 215,
-											"width": 151.71533203125,
+											"width": 158.62158203125,
 											"height": 13,
-											"text": "AbstractBaseRepository"
+											"text": "AbstractWritableRepository"
 										},
 										{
 											"_type": "LabelView",
@@ -4693,7 +4695,7 @@
 									"font": "Arial;13;0",
 									"left": 352,
 									"top": 208,
-									"width": 161.71533203125,
+									"width": 181.68505859375,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAFlUwjVDku7QlE="
@@ -4720,7 +4722,7 @@
 									"font": "Arial;13;0",
 									"left": 352,
 									"top": 233,
-									"width": 161.71533203125,
+									"width": 168.62158203125,
 									"height": 10
 								},
 								{
@@ -4735,7 +4737,7 @@
 									"font": "Arial;13;0",
 									"left": 352,
 									"top": 243,
-									"width": 161.71533203125,
+									"width": 168.62158203125,
 									"height": 10
 								},
 								{
@@ -4775,7 +4777,7 @@
 							"containerChangeable": true,
 							"left": 352,
 							"top": 208,
-							"width": 161.71533203125,
+							"width": 168.62158203125,
 							"height": 45,
 							"nameCompartment": {
 								"$ref": "AAAAAAFlUwjVDku66IY="
@@ -4836,7 +4838,7 @@
 											"top": 47,
 											"width": 181.32080078125,
 											"height": 13,
-											"text": "AbstractReadOnlyRepository"
+											"text": "AbstractReadableRepository"
 										},
 										{
 											"_type": "LabelView",
@@ -5227,7 +5229,7 @@
 								"$ref": "AAAAAAFlUwjVDku564o="
 							},
 							"lineStyle": 1,
-							"points": "432:207;431:85",
+							"points": "434:207;432:85",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAFlUwmGxkw53Qg="
@@ -5321,7 +5323,7 @@
 								"$ref": "AAAAAAFlUwjblEwLI3o="
 							},
 							"lineStyle": 1,
-							"points": "448:391;434:253",
+							"points": "448:391;437:253",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAFlUwmZAkxKIoM="
@@ -5472,7 +5474,7 @@
 											"top": 110,
 											"width": 182.03173828125,
 											"height": 13,
-											"text": "ReadOnlyRepositoryContract"
+											"text": "ReadableRepositoryContract"
 										},
 										{
 											"_type": "LabelView",
@@ -5486,7 +5488,7 @@
 											"top": -776,
 											"width": 268.53759765625,
 											"height": 13,
-											"text": "(from Xolens.Larautil.App.Repository.Contract)"
+											"text": "(from Xolens.PgLarautil.App.Repository.Contract)"
 										},
 										{
 											"_type": "LabelView",
@@ -5774,7 +5776,7 @@
 											"top": -768,
 											"width": 268.53759765625,
 											"height": 13,
-											"text": "(from Xolens.Larautil.App.Repository.Contract)"
+											"text": "(from Xolens.PgLarautil.App.Repository.Contract)"
 										},
 										{
 											"_type": "LabelView",
@@ -6233,7 +6235,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Xolens.Larautil.Test.Repository Class Diagram",
+					"name": "Xolens.PgLarautil.Test.Repository Class Diagram",
 					"ownedViews": [
 						{
 							"_type": "UMLClassView",
@@ -7416,7 +7418,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Xolens.Larautil.App.Repository.Contract",
+					"name": "Xolens.PgLarautil.App.Repository.Contract",
 					"ownedElements": [
 						{
 							"_type": "UMLInterface",
@@ -7424,7 +7426,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFlOAUqoVDc+AA="
 							},
-							"name": "BaseRepositoryContract",
+							"name": "WritableRepositoryContract",
 							"ownedElements": [
 								{
 									"_type": "UMLGeneralization",
@@ -7473,7 +7475,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFlOAUqoVDc+AA="
 							},
-							"name": "ReadOnlyRepositoryContract",
+							"name": "ReadableRepositoryContract",
 							"operations": [
 								{
 									"_type": "UMLOperation",
@@ -7676,7 +7678,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFlUwI2P0oummM="
 							},
-							"name": "LogRepository repo"
+							"name": "LogRepository repo",
+							"type": ""
 						}
 					],
 					"operations": [
@@ -7978,7 +7981,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "AbstractBaseRepository",
+					"name": "AbstractWritableRepository",
 					"ownedElements": [
 						{
 							"_type": "UMLGeneralization",
@@ -8001,7 +8004,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "AbstractReadOnlyRepository",
+					"name": "AbstractReadableRepository",
 					"ownedElements": [
 						{
 							"_type": "UMLInterfaceRealization",

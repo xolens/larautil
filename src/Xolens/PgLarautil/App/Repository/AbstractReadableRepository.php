@@ -1,13 +1,16 @@
 <?php
 
-namespace Xolens\Larautil\App\Repository;
+namespace Xolens\PgLarautil\App\Repository;
 
 use Illuminate\Support\Collection;
 
 use Xolens\LarautilContract\App\Repository\RepositoryResponse;
-use Xolens\LarautilContract\App\Repository\Contract\ReadOnlyRepositoryContract;
+use Xolens\LarautilContract\App\Repository\Contract\ReadableRepositoryContract;
 
-abstract class AbstractReadOnlyRepository implements ReadOnlyRepositoryContract{
+use Xolens\LarautilContract\App\Util\Model\Sorter;
+use Xolens\LarautilContract\App\Util\Model\Filterer;
+
+abstract class AbstractReadableRepository implements ReadableRepositoryContract{
     
     public abstract function model();
 
@@ -31,6 +34,21 @@ abstract class AbstractReadOnlyRepository implements ReadOnlyRepositoryContract{
         $collection = collect($items);
         $chunk = $collection->forPage($page, $perPage);
         return $this->returnResponse($chunk->all());
+    }
+
+    public function paginateSorted(Sorter $sorter, $perPage=50, $page = null,  $columns = ['*'], $pageName = 'page'){
+        $response = $sorter->sortModel($this->model())->paginate($perPage, $columns, $pageName, $page);
+        return $this->returnResponse($response);
+    }
+    
+    public function paginateFiltered(Filterer $filter, $perPage=50, $page = null,  $columns = ['*'], $pageName = 'page'){
+        $response = $filter->filterModel($this->model())->paginate($perPage, $columns, $pageName, $page);
+        return $this->returnResponse($response);
+    }
+
+    public function paginateSortedFiltered(Sorter $sorter, Filterer $filter, $perPage=50, $page = null,  $columns = ['*'], $pageName = 'page'){
+        $response =  $sorter->sortModel($filter->filterModel($this->model()))->paginate($perPage, $columns, $pageName, $page);
+        return $this->returnResponse($response);
     }
 
     public function count(){

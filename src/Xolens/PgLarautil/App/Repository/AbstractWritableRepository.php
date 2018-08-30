@@ -1,11 +1,11 @@
 <?php
 
-namespace Xolens\Larautil\App\Repository;
+namespace Xolens\PgLarautil\App\Repository;
 
 use Xolens\LarautilContract\App\Repository\RepositoryResponse;
-use Xolens\LarautilContract\App\Repository\Contract\BaseRepositoryContract;
+use Xolens\LarautilContract\App\Repository\Contract\WritableRepositoryContract;
 
-abstract class AbstractBaseRepository extends AbstractReadOnlyRepository implements BaseRepositoryContract{
+abstract class AbstractWritableRepository extends AbstractReadableRepository implements WritableRepositoryContract{
     
     public function create($data){
         $response = $this->model()::create($data);

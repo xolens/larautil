@@ -2,9 +2,9 @@
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
-use Xolens\Larautil\App\Util\LarautilMigration;
+use Xolens\PgLarautil\App\Util\PgLarautilMigration;
 
-class LarautilCreateDatabaseLogTable extends LarautilMigration
+class PgLarautilCreateDatabaseLogTable extends PgLarautilMigration
 {
     const TYPE_INSERT = "INSERT";
     const TYPE_UPDATE = "UPDATE";

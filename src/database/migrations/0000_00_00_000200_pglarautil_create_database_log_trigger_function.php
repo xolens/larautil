@@ -2,10 +2,10 @@
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
-use Xolens\Larautil\App\Util\LarautilMigration;
+use Xolens\PgLarautil\App\Util\PgLarautilMigration;
 use Illuminate\Support\Facades\DB;
 
-class LarautilCreateDatabaseLogTriggerFunction extends LarautilMigration
+class PgLarautilCreateDatabaseLogTriggerFunction extends PgLarautilMigration
 {
     /**
      * Return table name
@@ -31,19 +31,19 @@ class LarautilCreateDatabaseLogTriggerFunction extends LarautilMigration
                 __last_value json;
             BEGIN
                 IF TG_OP = 'INSERT' THEN
-                    __log_type = '".LarautilCreateDatabaseLogTable::TYPE_INSERT."';
+                    __log_type = '".PgLarautilCreateDatabaseLogTable::TYPE_INSERT."';
                     __last_value = row_to_json(NEW);
 
                 ELSEIF TG_OP = 'UPDATE' THEN
-                    __log_type = '".LarautilCreateDatabaseLogTable::TYPE_UPDATE."';
+                    __log_type = '".PgLarautilCreateDatabaseLogTable::TYPE_UPDATE."';
                     __last_value = row_to_json(NEW);
                 
                 ELSEIF TG_OP = 'DELETE' THEN
-                    __log_type = '".LarautilCreateDatabaseLogTable::TYPE_DELETE."';
+                    __log_type = '".PgLarautilCreateDatabaseLogTable::TYPE_DELETE."';
                     __last_value = NULL;
                 END IF;
 
-                INSERT INTO ".LarautilCreateDatabaseLogTable::table()." (log_schema, log_table, log_type, last_value,log_at) 
+                INSERT INTO ".PgLarautilCreateDatabaseLogTable::table()." (log_schema, log_table, log_type, last_value,log_at) 
                 VALUES (TG_TABLE_SCHEMA, TG_TABLE_NAME, __log_type, __last_value, now());
 
                 RETURN NULL;

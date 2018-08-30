@@ -1,12 +1,15 @@
 <?php
 
-namespace Xolens\Larautil\App\Repository;
+namespace Xolens\PgLarautil\App\Repository;
 
 use Xolens\LarautilContract\App\Repository\RepositoryResponse;
 use Xolens\LarautilContract\App\Repository\Contract\SoftDeletableRepositoryContract;
 
+use Xolens\LarautilContract\App\Util\Model\Sorter;
+use Xolens\LarautilContract\App\Util\Model\Filterer;
+
     
-abstract class AbstractSoftDeletableRepository extends AbstractBaseRepository implements SoftDeletableRepositoryContract{
+abstract class AbstractSoftDeletableRepository extends AbstractWritableRepository implements SoftDeletableRepositoryContract{
     
     public function restore($torestore){
         $model = $this->model();
@@ -58,12 +61,42 @@ abstract class AbstractSoftDeletableRepository extends AbstractBaseRepository im
         $response = $this->model()::withTrashed()->paginate($perPage, $columns, $pageName, $page);
         return $this->returnResponse($response);
     }
+
+    public function paginateSortedWithTrashed(Sorter $sorter, $perPage=50, $page = null,  $columns = ['*'], $pageName = 'page'){
+        $response = $sorter->sortModel($this->model()::withTrashed())->paginate($perPage, $columns, $pageName, $page);
+        return $this->returnResponse($response);
+    }
+
+    public function paginateFilteredWithTrashed(Filterer $filterer, $perPage=50, $page = null,  $columns = ['*'], $pageName = 'page'){
+        $response = $filterer->filterModel($this->model()::withTrashed())->paginate($perPage, $columns, $pageName, $page);
+        return $this->returnResponse($response);
+    }
+
+    public function paginateSortedFilteredWithTrashed(Sorter $sorter, Filterer $filterer, $perPage=50, $page = null,  $columns = ['*'], $pageName = 'page'){
+        $response =  $sorter->sortModel($filterer->filterModel($this->model()::withTrashed()))->paginate($perPage, $columns, $pageName, $page);
+        return $this->returnResponse($response);
+    }
     
     public function paginateOnlyTrashed($perPage=50, $page = null, $columns = ['*'], $pageName = 'page'){
         $response = $this->model()::onlyTrashed()->paginate($perPage, $columns, $pageName, $page);
         return $this->returnResponse($response);
     }
     
+    public function paginateSortedOnlyTrashed(Sorter $sorter, $perPage=50, $page = null,  $columns = ['*'], $pageName = 'page'){
+        $response = $sorter->sortModel($this->model()::onlyTrashed())->paginate($perPage, $columns, $pageName, $page);
+        return $this->returnResponse($response);
+    }
+
+    public function paginateFilteredOnlyTrashed(Filterer $filterer, $perPage=50, $page = null,  $columns = ['*'], $pageName = 'page'){
+        $response = $filterer->filterModel($this->model()::onlyTrashed())->paginate($perPage, $columns, $pageName, $page);
+        return $this->returnResponse($response);
+    }
+
+    public function paginateSortedFilteredOnlyTrashed(Sorter $sorter, Filterer $filterer, $perPage=50, $page = null,  $columns = ['*'], $pageName = 'page'){
+        $response =  $sorter->sortModel($filterer->filterModel($this->model()::onlyTrashed()))->paginate($perPage, $columns, $pageName, $page);
+        return $this->returnResponse($response);
+    }
+
     public function countWithTrashed(){
         $response = $this->model()::withTrashed()->count();
         return $this->returnResponse($response);

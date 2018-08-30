@@ -1,5 +1,5 @@
 {
-    "name": "xolens/larautil",
+    "name": "xolens/pglarautil",
     "description": "Usefull tools for PHP/Laravel application.",
     "type": "library",
     "require-dev": {
@@ -21,7 +21,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Xolens\\Larautil\\LarautilServiceProvider"
+                "Xolens\\PgLarautil\\PgLarautilServiceProvider"
             ]
         }
     }

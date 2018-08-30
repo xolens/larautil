@@ -1,10 +1,10 @@
 <?php
 
-namespace Xolens\Larautil\App\Model;
+namespace Xolens\PgLarautil\App\Model;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use LarautilCreateDatabaseLogTable;
+use PgLarautilCreateDatabaseLogTable;
 
 
 class Log extends Model
@@ -35,7 +35,7 @@ class Log extends Model
     protected $table;
     
     function __construct(array $attributes = []) {
-        $this->table = LarautilCreateDatabaseLogTable::table();
+        $this->table = PgLarautilCreateDatabaseLogTable::table();
         parent::__construct($attributes);
     }
 }
