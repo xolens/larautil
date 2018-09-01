@@ -8,8 +8,6 @@ use \Orchestra\Testbench\TestCase;
 
 trait WritableRepositoryTestTrait 
 {
-    private $repo;
-
     /**
      * Injected repository
      */

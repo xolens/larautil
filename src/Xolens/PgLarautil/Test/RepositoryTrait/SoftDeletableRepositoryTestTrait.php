@@ -8,8 +8,6 @@ use \Orchestra\Testbench\TestCase;
 
 trait SoftDeletableRepositoryTestTrait 
 {
-    private $repo;
-
     /**
      * Injected repository
      */
