@@ -9,10 +9,10 @@ use PgLarautilCreateDatabaseLogTriggerFunction;
 abstract class PgLarautilMigration extends AbstractPgLarautilMigration
 {
     public static function tablePrefix(){
-        return config('pglarautil.database_table_prefix');
+        return config('xolens-config.pglarautil-database_table_prefix');
     }
 
     public static function triggerPrefix(){
-        return config('pglarautil.database_trigger_prefix');
+        return config('xolens-config.pglarautil-database_trigger_prefix');
     }
 }
