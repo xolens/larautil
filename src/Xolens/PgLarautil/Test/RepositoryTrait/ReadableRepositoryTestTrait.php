@@ -56,6 +56,44 @@ trait ReadableRepositoryTestTrait
      * @test
      * @depends test_count
      */
+    public function test_all(){
+        $count = $this->repository()->count()->response();
+        $respone = $this->repository()->all()->response();
+        $this->assertTrue(true);
+    }
+    
+    /**
+     * @test
+     */
+    public function test_all_filtered(){
+        $filterer = $this->generateFilterer();
+        $respone = $this->repository()->allFiltered($filterer)->response();
+        $this->assertTrue(true);
+    }
+
+    /**
+     * @test
+     */
+    public function test_all_sorter(){
+        $sorter = $this->generateSorter();
+        $respone = $this->repository()->allSorted($sorter)->response();
+        $this->assertTrue(true);
+    }
+
+    /**
+     * @test
+     */
+    public function test_all_sorter_filtered(){
+        $sorter = $this->generateSorter();
+        $filterer = $this->generateFilterer();
+        $respone = $this->repository()->allSortedFiltered($sorter, $filterer)->response();
+        $this->assertTrue(true);
+    }
+
+    /**
+     * @test
+     * @depends test_count
+     */
     public function test_paginate_with_random_params(){
         $count = $this->repository()->count()->response();
         $perPage = rand(1,$count);

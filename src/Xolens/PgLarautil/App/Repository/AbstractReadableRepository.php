@@ -25,6 +25,26 @@ abstract class AbstractReadableRepository implements ReadableRepositoryContract{
         return $this->returnResponse($response);
     }
 
+    public function all($columns = ['*']){
+        $response = $this->model()::get($columns);
+        return $this->returnResponse($response);
+    }
+
+    public function allSorted(Sorter $sorter, $columns = ['*']){
+        $response = $sorter->sortModel($this->model())->get($columns);
+        return $this->returnResponse($response);
+    }
+    
+    public function allFiltered(Filterer $filter, $columns = ['*']){
+        $response = $filter->filterModel($this->model())->get($columns);
+        return $this->returnResponse($response);
+    }
+
+    public function allSortedFiltered(Sorter $sorter, Filterer $filter, $columns = ['*']){
+        $response =  $sorter->sortModel($filter->filterModel($this->model()))->get($columns);
+        return $this->returnResponse($response);
+    }
+
     public function paginate($perPage=50, $page = null,  $columns = ['*'], $pageName = 'page'){
         $response = $this->model()::paginate($perPage, $columns, $pageName, $page);
         return $this->returnResponse($response);
