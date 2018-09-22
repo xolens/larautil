@@ -10,10 +10,12 @@
         <env name="DB_DATABASE" value="minefopstat"/>
         <env name="DB_USERNAME" value="minefopstat"/>
         <env name="DB_PASSWORD" value="minefopstat"/>
+        <env name="DB_SCHEMA" value="minefopstat"/>
     </php>
     <testsuites>
         <testsuite name="test-package">
-        <directory>src/Xolens/PgLarautil/Test</directory>
+            <file>src/Xolens/PgLarautil/Test/Repository/CleanSchemaTest.php</file>
+            <file>src/Xolens/PgLarautil/Test/Repository/LogRepositoryTest.php</file>
         </testsuite>
   </testsuites>
 </phpunit>

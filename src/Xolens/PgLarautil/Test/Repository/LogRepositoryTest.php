@@ -5,7 +5,7 @@ namespace Xolens\PgLarautil\Test\Repository;
 use Xolens\PgLarautil\App\Repository\LogRepository;
 use Xolens\PgLarautil\App\Model\Log;
 use Carbon\Carbon;
-use \Orchestra\Testbench\TestCase;
+use Xolens\PgLarautil\Test\TestCase;
 use Xolens\PgLarautil\Test\RepositoryTrait\ReadableRepositoryTestTrait;
 use Xolens\PgLarautil\Test\RepositoryTrait\WritableRepositoryTestTrait;
 use Xolens\PgLarautil\Test\RepositoryTrait\SoftDeletableRepositoryTestTrait;
