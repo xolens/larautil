@@ -16,7 +16,7 @@ class TestCase extends OrchestraTestCase
 {
     
     protected function getEnvironmentSetUp($app){
-        $app['config']->set('database.connections.pgsql.schema', env('DB_PGSQL_SCHEMA','public'));
+        $app['config']->set('database.connections.pgsql.schema', env('DB_SCHEMA','public'));
     }
 
     public function schemaName(){
