@@ -27,4 +27,10 @@ class TestCase extends OrchestraTestCase
         return env('DB_CONNECTION','mysql')=='pgsql';
     }
     
+    /**
+     * @test
+     */
+    public function initialized(){
+        $this->assertTrue(true);
+    }
 }
