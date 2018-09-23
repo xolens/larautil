@@ -30,7 +30,7 @@ class PgLarautilCreateDatabaseLogTable extends PgLarautilMigration
             $table->string('log_schema');
             $table->string('log_table');
             $table->enum('log_type',[self::TYPE_INSERT,self::TYPE_UPDATE,self::TYPE_DELETE]);
-            $table->string('last_value')->nullable();
+            $table->text('last_value')->nullable();
             $table->timestamp('log_at');
             $table->softDeletes();
         });
