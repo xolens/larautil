@@ -32,7 +32,7 @@ abstract class AbstractWritableRepository extends AbstractReadableRepository imp
         return $this->returnResponse($response);
     }
 
-    public function validationRules($id = -1){
+    public function validationRules(array $data){
         return [];
     }
 }
