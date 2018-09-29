@@ -89,4 +89,11 @@ abstract class AbstractReadableRepository implements ReadableRepositoryContract{
         $err->setErrors($errors);
         return $err;
     }
+
+    public static function get(array $data, $key, $default = null){
+        if (array_key_exists($key, $data)) {
+            return $data[$key];
+        }
+        return $default;
+    }
 }
