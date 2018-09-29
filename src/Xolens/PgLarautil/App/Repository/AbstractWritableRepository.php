@@ -31,4 +31,8 @@ abstract class AbstractWritableRepository extends AbstractReadableRepository imp
         $response = $this->model()::destroy($toDelete);
         return $this->returnResponse($response);
     }
+
+    public function validationRules($id = -1){
+        return [];
+    }
 }
