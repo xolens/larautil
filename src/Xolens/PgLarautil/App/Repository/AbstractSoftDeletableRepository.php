@@ -3,7 +3,7 @@
 namespace Xolens\PgLarautil\App\Repository;
 
 use Xolens\LarautilContract\App\Repository\RepositoryResponse;
-use Xolens\LarautilContract\App\Repository\Contract\SoftDeletableRepositoryContract;
+use Xolens\LarautilContract\App\Contract\Repository\SoftDeletableRepositoryContract;
 
 use Xolens\LarautilContract\App\Util\Model\Sorter;
 use Xolens\LarautilContract\App\Util\Model\Filterer;
