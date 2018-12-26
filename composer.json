@@ -11,7 +11,7 @@
         "email": "xolens.official@gmail.com"
     }],
     "require": {
-        "xolens/larautil-contract": "1.0.0"
+        "xolens/larautil-contract": "dev-master"
     },
     "autoload": {
         "classmap": [
@@ -26,7 +26,7 @@
         }
     },
     "repositories": [{
-        "type": "git",
-        "url": "https://github.com/xolens/larautil-contract"
+        "type": "path",
+        "url": "/var/www/repositories/xolens.laravel/local/*"
     }]
 }
