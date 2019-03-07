@@ -4,11 +4,11 @@ namespace Xolens\PgLarautil\App\Repository;
 
 use Illuminate\Support\Collection;
 
-use Xolens\LarautilContract\App\Repository\RepositoryResponse;
-use Xolens\LarautilContract\App\Contract\Repository\ReadableRepositoryContract;
+use Xolens\PgLarautil\App\Util\RepositoryResponse;
+use Xolens\PgLarautil\App\Repository\ReadableRepositoryContract;
 
-use Xolens\LarautilContract\App\Util\Model\Sorter;
-use Xolens\LarautilContract\App\Util\Model\Filterer;
+use Xolens\PgLarautil\App\Util\Model\Sorter;
+use Xolens\PgLarautil\App\Util\Model\Filterer;
 
 abstract class AbstractReadableRepository implements ReadableRepositoryContract{
     

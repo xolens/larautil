@@ -10,9 +10,7 @@
         "name": "Xolens",
         "email": "xolens.official@gmail.com"
     }],
-    "require": {
-        "xolens/larautil-contract": "dev-master"
-    },
+    "require": {},
     "autoload": {
         "classmap": [
             "src/"

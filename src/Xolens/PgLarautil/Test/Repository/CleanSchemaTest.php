@@ -9,8 +9,8 @@ use Xolens\PgLarautil\Test\CleanSchemaBase;
 use Xolens\PgLarautil\Test\RepositoryTrait\ReadableRepositoryTestTrait;
 use Xolens\PgLarautil\Test\RepositoryTrait\WritableRepositoryTestTrait;
 use Xolens\PgLarautil\Test\RepositoryTrait\SoftDeletableRepositoryTestTrait;
-use Xolens\LarautilContract\App\Util\Model\Sorter;
-use Xolens\LarautilContract\App\Util\Model\Filterer;
+use Xolens\PgLarautil\App\Util\Model\Sorter;
+use Xolens\PgLarautil\App\Util\Model\Filterer;
 
 final class CleanSchemaTest extends CleanSchemaBase
 {

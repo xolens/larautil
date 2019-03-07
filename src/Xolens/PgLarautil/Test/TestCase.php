@@ -9,8 +9,8 @@ use \Orchestra\Testbench\TestCase as OrchestraTestCase;
 use Xolens\PgLarautil\Test\RepositoryTrait\ReadableRepositoryTestTrait;
 use Xolens\PgLarautil\Test\RepositoryTrait\WritableRepositoryTestTrait;
 use Xolens\PgLarautil\Test\RepositoryTrait\SoftDeletableRepositoryTestTrait;
-use Xolens\LarautilContract\App\Util\Model\Sorter;
-use Xolens\LarautilContract\App\Util\Model\Filterer;
+use Xolens\PgLarautil\App\Util\Model\Sorter;
+use Xolens\PgLarautil\App\Util\Model\Filterer;
 
 class TestCase extends OrchestraTestCase
 {

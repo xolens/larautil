@@ -2,11 +2,11 @@
 
 namespace Xolens\PgLarautil\App\Repository;
 
-use Xolens\LarautilContract\App\Repository\RepositoryResponse;
-use Xolens\LarautilContract\App\Contract\Repository\SoftDeletableRepositoryContract;
+use Xolens\PgLarautil\App\Util\RepositoryResponse;
+use Xolens\PgLarautil\App\Repository\SoftDeletableRepositoryContract;
 
-use Xolens\LarautilContract\App\Util\Model\Sorter;
-use Xolens\LarautilContract\App\Util\Model\Filterer;
+use Xolens\PgLarautil\App\Util\Model\Sorter;
+use Xolens\PgLarautil\App\Util\Model\Filterer;
 
     
 abstract class AbstractSoftDeletableRepository extends AbstractWritableRepository implements SoftDeletableRepositoryContract{

@@ -2,8 +2,8 @@
 
 namespace Xolens\PgLarautil\App\Repository;
 
-use Xolens\LarautilContract\App\Repository\RepositoryResponse;
-use Xolens\LarautilContract\App\Contract\Repository\WritableRepositoryContract;
+use Xolens\PgLarautil\App\Util\RepositoryResponse;
+use Xolens\PgLarautil\App\Repository\WritableRepositoryContract;
 
 abstract class AbstractWritableRepository extends AbstractReadableRepository implements WritableRepositoryContract{
     
