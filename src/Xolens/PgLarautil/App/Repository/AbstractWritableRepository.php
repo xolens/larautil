@@ -8,6 +8,9 @@ use Xolens\PgLarautil\App\Repository\WritableRepositoryContract;
 abstract class AbstractWritableRepository extends AbstractReadableRepository implements WritableRepositoryContract{
     
     public function create($data){
+        if(!is_array($data)){
+            $data = $data->toArray();
+        }
         $response = $this->model()::create($data);
         return $this->returnResponse($response);
     }
