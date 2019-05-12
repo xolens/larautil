@@ -22,9 +22,5 @@
                 "Xolens\\PgLarautil\\PgLarautilServiceProvider"
             ]
         }
-    },
-    "repositories": [{
-        "type": "path",
-        "url": "/var/www/repositories/xolens.laravel/local/*"
-    }]
+    }
 }

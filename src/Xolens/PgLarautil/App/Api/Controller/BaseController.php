@@ -3,7 +3,7 @@
 namespace Xolens\PgLarautil\App\Api\Controller;
 
 use Illuminate\Http\Request;
-use Xolens\LarautilContract\App\Repository\RepositoryResponse;
+use Xolens\PgLarautil\App\Util\RepositoryResponse;
 
 use Xolens\PgLarauser\App\Repository\UserRepository;
 use Xolens\PgLarauser\App\Repository\ProfileRepository;
